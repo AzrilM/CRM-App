@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="/css/style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/js/auth.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu">
+        <a class="brand-logo">Todo App</a>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Apps</a>
+          <ul class="dropdown">
+            <li><a href="index.html">CRM</a></li>
+          </ul>
+        </li>
+          <li><a href="#">Account</a>
+              <ul class="dropdown">
+                <li><a href="login.html">Log Out</a></li>
+              </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrapper">
+      <div class="task-input">
+        <img src="/images/bars-icon.svg" alt="icon">
+        <input type="text" placeholder="Add a new task">
+        <button><i class="fas fa-button"></i></button>
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button><i class="fas fa-plus"></i></button>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+
+    <script src="/js/script.js"></script>
+    
+
+  </body>
+</html>

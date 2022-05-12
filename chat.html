@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Apps</title>
+    <link rel="stylesheet" href="./assets/app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/chat.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="chat-area">
+            <header>
+                <a href="index.html" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+                <img src="./images/user/user.png" alt="">
+                <div class="details">
+                    <span>Azril Mulyana</span>
+                    <p>Active now</p>
+                </div>
+            </div>
+            </header>
+            <div class="chat-box">
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget felis urna. Vestibulum eget purus sit amet diam congue sagittis vitae ac nibh.</p>
+                    </div>
+                </div>
+                <div class="chat incoming">
+                    <img src="./images/user/user.png" alt="">
+                    <div class="details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget felis urna. Vestibulum eget purus sit amet diam congue sagittis vitae ac nibh.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <form action="#" class="typing-area">
+                <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
+                <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
+                <button><i class="fab fa-telegram-plane"></i></button>
+              </form>
+        </section>
+    </div>
+    <script src="/js/chat.js"></script>
+
+</body>
+</html>
